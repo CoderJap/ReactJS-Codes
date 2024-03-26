@@ -4,24 +4,21 @@ import './App.css'
 
 function App() {
 
-  let foodItems = ["Dal", "Pulses", "Vegetables", "Fruits"];
+   let foodItems = ["Dal", "Pulses", "Vegetables", "Fruits"];
+  // let foodItems = [];
 
 
   return (
     // Fragments
     // <React.Fragment> 
     <>
-    <div>Hello</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, explicabo.</div>
     <h1>Healthy Foods</h1>
+    {foodItems.length === 0 ?<h3>I am Hungry</h3>: null}
     <ul>
       {foodItems.map((item) =>(
         <li>{item}</li>
       ))}
-     
     </ul>
-    
-    
     </> 
     // </React.Fragment>
   );
